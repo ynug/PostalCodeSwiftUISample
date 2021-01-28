@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04733F6E25C17F8E00AFC97D /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04733F6D25C17F8E00AFC97D /* DatabaseManager.swift */; };
+		04733F7625C186DD00AFC97D /* SQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04733F7525C186DD00AFC97D /* SQLite.swift */; };
+		04733F7B25C18FB900AFC97D /* PostalCodeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04733F7A25C18FB900AFC97D /* PostalCodeTable.swift */; };
+		04733F8725C1ABEE00AFC97D /* StreetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04733F8625C1ABEE00AFC97D /* StreetListView.swift */; };
+		04733F9225C1AD2600AFC97D /* CityTownListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04733F9125C1AD2600AFC97D /* CityTownListViewModel.swift */; };
+		04733FA025C1D26200AFC97D /* StreetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04733F9F25C1D26200AFC97D /* StreetListViewModel.swift */; };
+		04733FB425C1D96600AFC97D /* SearchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04733FB325C1D96600AFC97D /* SearchListViewModel.swift */; };
+		04733FBC25C2B99500AFC97D /* PostalCodeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04733FBB25C2B99500AFC97D /* PostalCodeRow.swift */; };
+		04FE369725C0451A001D2315 /* PostalCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE369625C0451A001D2315 /* PostalCodeApp.swift */; };
+		04FE369925C0451A001D2315 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE369825C0451A001D2315 /* ContentView.swift */; };
+		04FE369B25C0451B001D2315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FE369A25C0451B001D2315 /* Assets.xcassets */; };
+		04FE369E25C0451B001D2315 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FE369D25C0451B001D2315 /* Preview Assets.xcassets */; };
+		04FE36A925C0451C001D2315 /* PostalCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE36A825C0451C001D2315 /* PostalCodeTests.swift */; };
+		04FE36B425C0451C001D2315 /* PostalCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE36B325C0451C001D2315 /* PostalCodeUITests.swift */; };
+		04FE36CB25C04614001D2315 /* PrefectureListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE36CA25C04614001D2315 /* PrefectureListView.swift */; };
+		04FE36DA25C046AA001D2315 /* SearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE36D925C046AA001D2315 /* SearchListView.swift */; };
+		04FE36E425C0470D001D2315 /* SearchResultRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE36E325C0470D001D2315 /* SearchResultRow.swift */; };
+		04FE36F525C0474B001D2315 /* PostalCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE36F425C0474B001D2315 /* PostalCodeView.swift */; };
+		04FE36FE25C04825001D2315 /* InfoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE36FD25C04825001D2315 /* InfoList.swift */; };
+		04FE370925C04D85001D2315 /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE370825C04D85001D2315 /* InfoRow.swift */; };
+		04FE371125C06A6F001D2315 /* CityTownListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE371025C06A6F001D2315 /* CityTownListView.swift */; };
+		04FE371625C06A7B001D2315 /* PrefectureRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE371525C06A7B001D2315 /* PrefectureRowView.swift */; };
+		04FE371B25C06C3C001D2315 /* Prefectures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE371A25C06C3C001D2315 /* Prefectures.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04FE36A525C0451C001D2315 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04FE368B25C0451A001D2315 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04FE369225C0451A001D2315;
+			remoteInfo = PostalCode;
+		};
+		04FE36B025C0451C001D2315 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04FE368B25C0451A001D2315 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04FE369225C0451A001D2315;
+			remoteInfo = PostalCode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04733F6D25C17F8E00AFC97D /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		04733F7525C186DD00AFC97D /* SQLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLite.swift; sourceTree = "<group>"; };
+		04733F7A25C18FB900AFC97D /* PostalCodeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalCodeTable.swift; sourceTree = "<group>"; };
+		04733F8625C1ABEE00AFC97D /* StreetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetListView.swift; sourceTree = "<group>"; };
+		04733F9125C1AD2600AFC97D /* CityTownListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTownListViewModel.swift; sourceTree = "<group>"; };
+		04733F9F25C1D26200AFC97D /* StreetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetListViewModel.swift; sourceTree = "<group>"; };
+		04733FB325C1D96600AFC97D /* SearchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListViewModel.swift; sourceTree = "<group>"; };
+		04733FBB25C2B99500AFC97D /* PostalCodeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalCodeRow.swift; sourceTree = "<group>"; };
+		04FE369325C0451A001D2315 /* PostalCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostalCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FE369625C0451A001D2315 /* PostalCodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalCodeApp.swift; sourceTree = "<group>"; };
+		04FE369825C0451A001D2315 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04FE369A25C0451B001D2315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04FE369D25C0451B001D2315 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04FE369F25C0451B001D2315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FE36A425C0451C001D2315 /* PostalCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostalCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FE36A825C0451C001D2315 /* PostalCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalCodeTests.swift; sourceTree = "<group>"; };
+		04FE36AA25C0451C001D2315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FE36AF25C0451C001D2315 /* PostalCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostalCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FE36B325C0451C001D2315 /* PostalCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalCodeUITests.swift; sourceTree = "<group>"; };
+		04FE36B525C0451C001D2315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FE36CA25C04614001D2315 /* PrefectureListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureListView.swift; sourceTree = "<group>"; };
+		04FE36D925C046AA001D2315 /* SearchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListView.swift; sourceTree = "<group>"; };
+		04FE36E325C0470D001D2315 /* SearchResultRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultRow.swift; sourceTree = "<group>"; };
+		04FE36F425C0474B001D2315 /* PostalCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalCodeView.swift; sourceTree = "<group>"; };
+		04FE36FD25C04825001D2315 /* InfoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoList.swift; sourceTree = "<group>"; };
+		04FE370825C04D85001D2315 /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
+		04FE371025C06A6F001D2315 /* CityTownListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTownListView.swift; sourceTree = "<group>"; };
+		04FE371525C06A7B001D2315 /* PrefectureRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureRowView.swift; sourceTree = "<group>"; };
+		04FE371A25C06C3C001D2315 /* Prefectures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefectures.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04FE369025C0451A001D2315 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FE36A125C0451C001D2315 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FE36AC25C0451C001D2315 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04733F6C25C17F7500AFC97D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				04733F6D25C17F8E00AFC97D /* DatabaseManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		04733F8225C1AB9B00AFC97D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				04733F9125C1AD2600AFC97D /* CityTownListViewModel.swift */,
+				04733F9F25C1D26200AFC97D /* StreetListViewModel.swift */,
+				04733FB325C1D96600AFC97D /* SearchListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		04FE368A25C0451A001D2315 = {
+			isa = PBXGroup;
+			children = (
+				04FE369525C0451A001D2315 /* PostalCode */,
+				04FE36A725C0451C001D2315 /* PostalCodeTests */,
+				04FE36B225C0451C001D2315 /* PostalCodeUITests */,
+				04FE369425C0451A001D2315 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04FE369425C0451A001D2315 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04FE369325C0451A001D2315 /* PostalCode.app */,
+				04FE36A425C0451C001D2315 /* PostalCodeTests.xctest */,
+				04FE36AF25C0451C001D2315 /* PostalCodeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04FE369525C0451A001D2315 /* PostalCode */ = {
+			isa = PBXGroup;
+			children = (
+				04FE369625C0451A001D2315 /* PostalCodeApp.swift */,
+				04733F6C25C17F7500AFC97D /* Manager */,
+				04FE36C725C04548001D2315 /* Views */,
+				04733F8225C1AB9B00AFC97D /* ViewModels */,
+				04FE36C825C04550001D2315 /* Models */,
+				04FE369A25C0451B001D2315 /* Assets.xcassets */,
+				04FE369F25C0451B001D2315 /* Info.plist */,
+				04FE369C25C0451B001D2315 /* Preview Content */,
+			);
+			path = PostalCode;
+			sourceTree = "<group>";
+		};
+		04FE369C25C0451B001D2315 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04FE369D25C0451B001D2315 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04FE36A725C0451C001D2315 /* PostalCodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				04FE36A825C0451C001D2315 /* PostalCodeTests.swift */,
+				04FE36AA25C0451C001D2315 /* Info.plist */,
+			);
+			path = PostalCodeTests;
+			sourceTree = "<group>";
+		};
+		04FE36B225C0451C001D2315 /* PostalCodeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04FE36B325C0451C001D2315 /* PostalCodeUITests.swift */,
+				04FE36B525C0451C001D2315 /* Info.plist */,
+			);
+			path = PostalCodeUITests;
+			sourceTree = "<group>";
+		};
+		04FE36C725C04548001D2315 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04FE369825C0451A001D2315 /* ContentView.swift */,
+				04FE36F325C04734001D2315 /* Common */,
+				04FE36C925C045BD001D2315 /* Prefectures */,
+				04FE36D725C04680001D2315 /* Search */,
+				04FE36FC25C04810001D2315 /* Info */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04FE36C825C04550001D2315 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04FE371A25C06C3C001D2315 /* Prefectures.swift */,
+				04733F7525C186DD00AFC97D /* SQLite.swift */,
+				04733F7A25C18FB900AFC97D /* PostalCodeTable.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04FE36C925C045BD001D2315 /* Prefectures */ = {
+			isa = PBXGroup;
+			children = (
+				04FE36CA25C04614001D2315 /* PrefectureListView.swift */,
+				04FE371025C06A6F001D2315 /* CityTownListView.swift */,
+				04733F8625C1ABEE00AFC97D /* StreetListView.swift */,
+				04FE371525C06A7B001D2315 /* PrefectureRowView.swift */,
+			);
+			path = Prefectures;
+			sourceTree = "<group>";
+		};
+		04FE36D725C04680001D2315 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				04FE36D925C046AA001D2315 /* SearchListView.swift */,
+				04FE36E325C0470D001D2315 /* SearchResultRow.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		04FE36F325C04734001D2315 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				04FE36F425C0474B001D2315 /* PostalCodeView.swift */,
+				04733FBB25C2B99500AFC97D /* PostalCodeRow.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		04FE36FC25C04810001D2315 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				04FE36FD25C04825001D2315 /* InfoList.swift */,
+				04FE370825C04D85001D2315 /* InfoRow.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04FE369225C0451A001D2315 /* PostalCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FE36B825C0451C001D2315 /* Build configuration list for PBXNativeTarget "PostalCode" */;
+			buildPhases = (
+				04FE368F25C0451A001D2315 /* Sources */,
+				04FE369025C0451A001D2315 /* Frameworks */,
+				04FE369125C0451A001D2315 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PostalCode;
+			productName = PostalCode;
+			productReference = 04FE369325C0451A001D2315 /* PostalCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04FE36A325C0451C001D2315 /* PostalCodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FE36BB25C0451C001D2315 /* Build configuration list for PBXNativeTarget "PostalCodeTests" */;
+			buildPhases = (
+				04FE36A025C0451C001D2315 /* Sources */,
+				04FE36A125C0451C001D2315 /* Frameworks */,
+				04FE36A225C0451C001D2315 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04FE36A625C0451C001D2315 /* PBXTargetDependency */,
+			);
+			name = PostalCodeTests;
+			productName = PostalCodeTests;
+			productReference = 04FE36A425C0451C001D2315 /* PostalCodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04FE36AE25C0451C001D2315 /* PostalCodeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FE36BE25C0451C001D2315 /* Build configuration list for PBXNativeTarget "PostalCodeUITests" */;
+			buildPhases = (
+				04FE36AB25C0451C001D2315 /* Sources */,
+				04FE36AC25C0451C001D2315 /* Frameworks */,
+				04FE36AD25C0451C001D2315 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04FE36B125C0451C001D2315 /* PBXTargetDependency */,
+			);
+			name = PostalCodeUITests;
+			productName = PostalCodeUITests;
+			productReference = 04FE36AF25C0451C001D2315 /* PostalCodeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04FE368B25C0451A001D2315 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					04FE369225C0451A001D2315 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					04FE36A325C0451C001D2315 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 04FE369225C0451A001D2315;
+					};
+					04FE36AE25C0451C001D2315 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 04FE369225C0451A001D2315;
+					};
+				};
+			};
+			buildConfigurationList = 04FE368E25C0451A001D2315 /* Build configuration list for PBXProject "PostalCode" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = 04FE368A25C0451A001D2315;
+			productRefGroup = 04FE369425C0451A001D2315 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04FE369225C0451A001D2315 /* PostalCode */,
+				04FE36A325C0451C001D2315 /* PostalCodeTests */,
+				04FE36AE25C0451C001D2315 /* PostalCodeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04FE369125C0451A001D2315 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FE369E25C0451B001D2315 /* Preview Assets.xcassets in Resources */,
+				04FE369B25C0451B001D2315 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FE36A225C0451C001D2315 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FE36AD25C0451C001D2315 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04FE368F25C0451A001D2315 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FE36F525C0474B001D2315 /* PostalCodeView.swift in Sources */,
+				04733F7625C186DD00AFC97D /* SQLite.swift in Sources */,
+				04733F9225C1AD2600AFC97D /* CityTownListViewModel.swift in Sources */,
+				04FE36FE25C04825001D2315 /* InfoList.swift in Sources */,
+				04733F6E25C17F8E00AFC97D /* DatabaseManager.swift in Sources */,
+				04FE36E425C0470D001D2315 /* SearchResultRow.swift in Sources */,
+				04FE371125C06A6F001D2315 /* CityTownListView.swift in Sources */,
+				04733F7B25C18FB900AFC97D /* PostalCodeTable.swift in Sources */,
+				04FE370925C04D85001D2315 /* InfoRow.swift in Sources */,
+				04733FB425C1D96600AFC97D /* SearchListViewModel.swift in Sources */,
+				04FE36DA25C046AA001D2315 /* SearchListView.swift in Sources */,
+				04FE369925C0451A001D2315 /* ContentView.swift in Sources */,
+				04FE36CB25C04614001D2315 /* PrefectureListView.swift in Sources */,
+				04733FBC25C2B99500AFC97D /* PostalCodeRow.swift in Sources */,
+				04FE369725C0451A001D2315 /* PostalCodeApp.swift in Sources */,
+				04733F8725C1ABEE00AFC97D /* StreetListView.swift in Sources */,
+				04FE371B25C06C3C001D2315 /* Prefectures.swift in Sources */,
+				04FE371625C06A7B001D2315 /* PrefectureRowView.swift in Sources */,
+				04733FA025C1D26200AFC97D /* StreetListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FE36A025C0451C001D2315 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FE36A925C0451C001D2315 /* PostalCodeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FE36AB25C0451C001D2315 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FE36B425C0451C001D2315 /* PostalCodeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04FE36A625C0451C001D2315 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04FE369225C0451A001D2315 /* PostalCode */;
+			targetProxy = 04FE36A525C0451C001D2315 /* PBXContainerItemProxy */;
+		};
+		04FE36B125C0451C001D2315 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04FE369225C0451A001D2315 /* PostalCode */;
+			targetProxy = 04FE36B025C0451C001D2315 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04FE36B625C0451C001D2315 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04FE36B725C0451C001D2315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04FE36B925C0451C001D2315 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PostalCode/Preview Content\"";
+				DEVELOPMENT_TEAM = FYPGH2Q86L;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PostalCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.toarupc.PostalCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04FE36BA25C0451C001D2315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PostalCode/Preview Content\"";
+				DEVELOPMENT_TEAM = FYPGH2Q86L;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PostalCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.toarupc.PostalCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04FE36BC25C0451C001D2315 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FYPGH2Q86L;
+				INFOPLIST_FILE = PostalCodeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.toarupc.PostalCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PostalCode.app/PostalCode";
+			};
+			name = Debug;
+		};
+		04FE36BD25C0451C001D2315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FYPGH2Q86L;
+				INFOPLIST_FILE = PostalCodeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.toarupc.PostalCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PostalCode.app/PostalCode";
+			};
+			name = Release;
+		};
+		04FE36BF25C0451C001D2315 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FYPGH2Q86L;
+				INFOPLIST_FILE = PostalCodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.toarupc.PostalCodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PostalCode;
+			};
+			name = Debug;
+		};
+		04FE36C025C0451C001D2315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FYPGH2Q86L;
+				INFOPLIST_FILE = PostalCodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.toarupc.PostalCodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PostalCode;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04FE368E25C0451A001D2315 /* Build configuration list for PBXProject "PostalCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FE36B625C0451C001D2315 /* Debug */,
+				04FE36B725C0451C001D2315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FE36B825C0451C001D2315 /* Build configuration list for PBXNativeTarget "PostalCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FE36B925C0451C001D2315 /* Debug */,
+				04FE36BA25C0451C001D2315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FE36BB25C0451C001D2315 /* Build configuration list for PBXNativeTarget "PostalCodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FE36BC25C0451C001D2315 /* Debug */,
+				04FE36BD25C0451C001D2315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FE36BE25C0451C001D2315 /* Build configuration list for PBXNativeTarget "PostalCodeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FE36BF25C0451C001D2315 /* Debug */,
+				04FE36C025C0451C001D2315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04FE368B25C0451A001D2315 /* Project object */;
+}
