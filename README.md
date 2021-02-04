@@ -1,36 +1,31 @@
-# 郵便番号検索アプリ
+# Zip code search app
 
-郵便番号を検索できるアプリ
+An app that allows you to search for a zip code
 
 
-AppleのSwiftUI Tutorialsをやってみたので、似たようUIパーツを使ったアプリのサンプル
-
-SQLiteはFMDBとかのライブラリを使えば簡単に実装できるが、直接触るとどれくらい大変なのか体験
+I tried Apple's Swift UI Tutorials, so a sample app that uses UI parts in a similar way.
 
 
 ![light](./img/light.png)
 
 ![dark](./img/dark.png)
 
-## 開発環境
+## Development Environment
 
 * Xcode 12.4 (12D4e)
 * Swift 5.3.2
 
-## 対応OS
+## Supported OS
 
-* iOS14以降
+* iOS14 or later
 
 ## 利用データ
 
-郵便番号データベースは下記のものを使用  
+Use the following postal code database
 https://github.com/ynug/convertPostalCodeToSqlite
 
-## 既知の問題
+## Known issues
 
-* 検索時に検索結果が多い状態で再検索するとフリーズする
-検索結果件数が少ない場合は時に問題にならない。  
-Listに10000万件とかのデータを表示して再度データを適用しようとするフリーズするような感じ。  
-UITableViewのように直近だけのセルを作るような仕様に出来れば改善しそう  
-実装が悪いのかListの不具合なのかいまいちわからない
+* When searching again with many search results, it freezes.
+I don't know if it's badly implemented or a List bug
 
