@@ -21,7 +21,7 @@ I tried Apple's Swift UI Tutorials, so a sample app that uses UI parts in a simi
 
 ## Use Data
 
-Use the following postal code database
+Use the following postal code database  
 https://github.com/ynug/convertPostalCodeToSqlite
 
 ## Known issues
