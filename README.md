@@ -19,7 +19,7 @@ I tried Apple's Swift UI Tutorials, so a sample app that uses UI parts in a simi
 
 * iOS14 or later
 
-## 利用データ
+## Use Data
 
 Use the following postal code database
 https://github.com/ynug/convertPostalCodeToSqlite
