@@ -21,10 +21,10 @@ struct SearchListView: View {
                 .padding()
                 
                 List(searchListVM.postalCodeTables) { row in
-//                    NavigationLink(destination: PostalCodeView(pc: row)) {
+                    NavigationLink(destination: PostalCodeView(pc: row)) {
                         SearchResultRow(pc: row)
                         
-//                    }
+                    }
                 }
                 .listStyle(PlainListStyle())
             }
