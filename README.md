@@ -12,20 +12,15 @@ I tried Apple's Swift UI Tutorials, so a sample app that uses UI parts in a simi
 
 ## Development Environment
 
-* Xcode 12.4 (12D4e)
-* Swift 5.3.2
+* Xcode 13.2.1 (13C100)
+* Swift 5.5.2
 
 ## Supported OS
 
-* iOS14 or later
+* iOS15 or later
 
 ## Use Data
 
 Use the following postal code database  
 https://github.com/ynug/convertPostalCodeToSqlite
-
-## Known issues
-
-* When searching again with many search results, it freezes.
-I don't know if it's badly implemented or a List bug
 

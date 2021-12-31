@@ -15,6 +15,11 @@ class SearchListViewModel: ObservableObject {
     }
     
     func getList(text: String) {
+        if text.isEmpty {
+            postalCodeTables = []
+            return
+        }
+        
         let streetList = DatabaseManager.shared.sqlite.getSearchList(text: text)
         postalCodeTables = streetList
         

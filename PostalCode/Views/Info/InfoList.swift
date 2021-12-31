@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct InfoList: View {
-    let postCodeDate = "2020年12月28日"
+    let postCodeDate = "2021年12月28日"
     let appVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
     
     var body: some View {
@@ -19,7 +19,7 @@ struct InfoList: View {
                 }
                 
                 Section() {
-                    InfoRow(title: "アプリバージョン", text: "1.0")
+                    InfoRow(title: "アプリバージョン", text: "1.1")
                 }
                 
             }
